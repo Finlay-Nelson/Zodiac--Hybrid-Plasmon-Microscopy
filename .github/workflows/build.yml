@@ -33,7 +33,7 @@ jobs:
       # 4️⃣ Build .exe with PyInstaller
       - name: Build executable with PyInstaller
         run: |
-          pyinstaller --onefile --name Zodiac --windowed src/gui/test_gui.py
+          pyinstaller --onefile --name Zodiac --windowed src/gui/led_control_gui.py
         shell: bash
 
       # 5️⃣ Upload artifact to GitHub release using PAT
