@@ -7,26 +7,36 @@ on:
 jobs:
   build-windows:
     runs-on: windows-latest
+
     steps:
+      # 1️⃣ Checkout repo
       - name: Checkout code
         uses: actions/checkout@v3
 
+      # 2️⃣ Set up Python
       - name: Set up Python
         uses: actions/setup-python@v4
         with:
           python-version: "3.10"
 
+      # 3️⃣ Install dependencies
       - name: Install dependencies
         run: |
           echo "Current directory: $(pwd)"
+          ls -la
           python -m pip install --upgrade pip
           pip install pyinstaller
-          pip install -r requirements.txt
-          
+          # Optional: install packages from requirements.txt if it exists
+          if [ -f requirements.txt ]; then pip install -r requirements.txt; else echo "No requirements.txt found, skipping"; fi
+        shell: bash
+
+      # 4️⃣ Build .exe with PyInstaller
       - name: Build executable with PyInstaller
         run: |
           pyinstaller --onefile --name microscopy-assembly src/cli_main.py
+        shell: bash
 
+      # 5️⃣ Upload artifact to GitHub release
       - name: Upload artifact to GitHub release
         uses: actions/upload-release-asset@v1
         with:
@@ -34,3 +44,5 @@ jobs:
           asset_path: dist/microscopy-assembly.exe
           asset_name: microscopy-assembly.exe
           asset_content_type: application/octet-stream
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
