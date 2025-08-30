@@ -19,10 +19,9 @@ jobs:
       - name: Install dependencies
         run: |
           echo "Current directory: $(pwd)"
-          ls -la
           python -m pip install --upgrade pip
           pip install pyinstaller
-          pip install -r $GITHUB_WORKSPACE/requirements.txt
+          pip install requirements.txt
           
       - name: Build executable with PyInstaller
         run: |
