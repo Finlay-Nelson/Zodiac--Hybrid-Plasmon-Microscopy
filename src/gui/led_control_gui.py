@@ -2,16 +2,6 @@
 import sys
 import os
 
-# Adjust path so 'devices' can be found whether running as script or .exe
-if getattr(sys, 'frozen', False):
-    # Running as PyInstaller .exe
-    base_path = sys._MEIPASS
-else:
-    # Running as a normal script
-    base_path = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
-
-sys.path.insert(0, base_path)
-
 from devices.led import LED
 
 from PySide6.QtWidgets import QApplication, QWidget, QVBoxLayout, QLabel, QSlider
