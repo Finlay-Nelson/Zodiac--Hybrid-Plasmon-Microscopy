@@ -21,7 +21,7 @@ jobs:
           echo "Current directory: $(pwd)"
           python -m pip install --upgrade pip
           pip install pyinstaller
-          pip install requirements.txt
+          pip install -r requirements.txt
           
       - name: Build executable with PyInstaller
         run: |
