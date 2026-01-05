@@ -1,4 +1,4 @@
-# Microscopy Assembly Platform
+# Plasmon Microscope Assembly
 
 This repository contains software for controlling microscopy experiments,
 running automated workflows, and processing experimental data.
@@ -16,4 +16,5 @@ cd microscopy-assembly
 conda env create -f environment.yml
 conda activate microscopy
 python src/cli_main.py --help
+
 
