@@ -3,6 +3,8 @@
 This repository contains software for controlling microscopy experiments,
 running automated workflows, and processing experimental data.
 
+![Zodiac Render](images/Zodiac Full Hi Res)
+
 ## Current Status
 This is an early skeleton version with placeholder functions.
 - CLI works: `python src/cli_main.py --experiment test`
@@ -16,5 +18,6 @@ cd microscopy-assembly
 conda env create -f environment.yml
 conda activate microscopy
 python src/cli_main.py --help
+
 
 
