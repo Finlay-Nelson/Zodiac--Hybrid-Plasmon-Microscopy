@@ -4,7 +4,8 @@ This repository contains software for controlling microscopy experiments,
 running automated workflows, and processing experimental data.
 
 <p align="center">
-  <img src="images/Zodiac Full Lo Res.png", width="400" alt="Zodiac Full Hi Res">
+  <img src="images/Zodiac Full Lo Res.png", height="400" alt="Zodiac Full Lo Res">
+  <img src="images/Tier 4 Lo Res.png", height="400" alt="Zodiac Tier 4 Lo Res">
 </p>
 
 ## Current Status
@@ -20,6 +21,7 @@ cd microscopy-assembly
 conda env create -f environment.yml
 conda activate microscopy
 python src/cli_main.py --help
+
 
 
 
