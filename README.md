@@ -1,6 +1,6 @@
 # A High Resolution Multi-modal Plasmon Microscopy Platform
 
-Electrical impedance imaging is a burgeoning field in electrochemistry, materials, and electrophysiology. Given here is an account of a high-resolution hybrid sensing / imaging platform from which maps of electrical impedance can be constructed with resolutions < 500nm, with samples ranging from simple polymers and coatings, to complex biological systems.
+Electrical impedance imaging is a burgeoning field in electrochemistry, materials, and electrophysiology. Given here is an account of a high-resolution hybrid sensing / imaging platform from which maps of electrical impedance can be constructed with resolutions < 160nm, with samples ranging from simple polymers and coatings, to complex biological systems.
 
 Within this repository:
 - An account of the optical configuration and assembly of the microscopy platform
@@ -28,6 +28,7 @@ cd microscopy-assembly
 conda env create -f environment.yml
 conda activate microscopy
 python src/cli_main.py --help
+
 
 
 
