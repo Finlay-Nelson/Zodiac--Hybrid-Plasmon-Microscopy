@@ -3,7 +3,7 @@
 Electrical impedance imaging is a burgeoning field in electrochemistry, materials, and electrophysiology. Given here is an account of a high-resolution hybrid sensing / imaging platform from which maps of electrical impedance can be constructed with resolutions < 160nm, with samples ranging from simple polymers and coatings, to complex biological systems.
 
 <p align="center">
-  <img src="images/Polystyrene Scan 11 Lo Res.png", height="400" alt="Polystyrene Scan 11">
+  <img src="images/One Slide Summary Hi Res.png", height="400" alt="Project Summary">
 </p>
 
 Within this repository:
@@ -15,9 +15,9 @@ Within this repository:
 
 (Repo updates to follow conclusion of discussion re: IP)
 
-<p align="center">
+<!-- <p align="center">
   <img src="images/One Slide Summary Hi Res.png", height="400" alt="Project Summary">
-</p>
+</p> -->
 
 ## Current Status
 This is an early skeleton version with placeholder functions.
@@ -32,6 +32,7 @@ cd microscopy-assembly
 conda env create -f environment.yml
 conda activate microscopy
 python src/cli_main.py --help
+
 
 
 
