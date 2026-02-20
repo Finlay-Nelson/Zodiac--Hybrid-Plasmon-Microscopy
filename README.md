@@ -16,7 +16,7 @@ Within this repository:
 (Repo updates to follow conclusion of discussion re: IP)
 
 <p align="center">
-  <img src="images/Blender Zodiac Full 1 Lo Res.png", height="400" alt="Zodiac Full Lo Res">
+  <img src="images/One Slide Summary Hi Res.png", height="400" alt="Project Summary">
 </p>
 
 ## Current Status
@@ -32,6 +32,7 @@ cd microscopy-assembly
 conda env create -f environment.yml
 conda activate microscopy
 python src/cli_main.py --help
+
 
 
 
